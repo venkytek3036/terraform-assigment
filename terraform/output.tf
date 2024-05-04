@@ -35,7 +35,3 @@ output "vpc_id" {
   value       = module.vpc_apps.vpc_id
 }
 
-output "security_group_id" {
-  description = "ID of the security group"
-  value       = module.alb.security_group_id
-}
