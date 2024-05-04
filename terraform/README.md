@@ -3,13 +3,18 @@
 
 This setup uses Terraform to create important parts of an AWS environment for running applications. It includes:
 
-ALB (Application Load Balancer): This spreads incoming web traffic evenly across different parts of your application.
-Security Group: Think of this as a virtual firewall for your servers, allowing only specific types of traffic in and out.
-IAM Role: This gives your servers permission to do certain tasks within AWS, like accessing other services.
-TLS Private Key: This is for secure communication between your servers and users.
-Key Pair: It's like a digital lock and key for accessing your servers remotely.
-EC2 Instance: This is your virtual server where your application runs.
-VPC (Virtual Private Cloud): This is like your private network in AWS, where you can place your servers and control how they connect to the internet.
+# ALB (Application Load Balancer): 
+This spreads incoming web traffic evenly across different parts of your application.
+# Security Group: 
+Think of this as a virtual firewall for your servers, allowing only specific types of traffic in and out.
+# IAM Role: 
+This gives your servers permission to do certain tasks within AWS, like accessing other services.
+# Key Pair: 
+It's like a digital lock and key for accessing your servers remotely.
+# EC2 Instance: 
+This is your virtual server where your application runs.
+# VPC (Virtual Private Cloud): 
+This is like your private network in AWS, where you can place your servers and control how they connect to the internet.
 
 ## Requirements
 
