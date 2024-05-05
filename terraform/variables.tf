@@ -32,21 +32,21 @@ variable "subnet_cidr" {
 }
 
 variable "multiple_nat_gateways" {
-     description = "Enable multiple NAT gateways"
-    type    = bool
-  default = false
+  description = "Enable multiple NAT gateways"
+  type        = bool
+  default     = false
 }
 
 variable "aws_availability_zone_names" {
-    description = "Provide availability zone names"
-  type = list(string)
-  default = ["ap-south-1a", "ap-south-1b"]
+  description = "Provide availability zone names"
+  type        = list(string)
+  default     = ["ap-south-1a", "ap-south-1b"]
 }
 
 variable "aws_region" {
-    description = "Provide region name"
-  type    = string
-  default = "ap-south-1"
+  description = "Provide region name"
+  type        = string
+  default     = "ap-south-1"
 }
 
 variable "profile" {

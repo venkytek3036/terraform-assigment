@@ -10,5 +10,5 @@ locals {
 
 locals {
   prefix = "${var.prefix}apps"
-  env      = var.envType
+  env    = var.envType
 }
