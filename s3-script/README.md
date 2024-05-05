@@ -1,6 +1,6 @@
 # Overview
 
-Shell script executed via cron or another scheduling mechanism. Here's a simple shell script to perform regular backups of an S3 bucket
+Shell script executed via cron or another scheduling mechanism like lambda etc. Here's a simple shell script to perform regular backups of an S3 bucket
 
 ```
 #!/bin/bash
@@ -19,7 +19,7 @@ echo "Backup of $SOURCE_BUCKET completed and saved to $DEST_BUCKET/backup-$TIMES
 
 ```
 
-Save this script to a file ```(e.g., s3_backup.sh)```, make it executable with ```chmod +x s3_backup.sh```, and then you can run it to create a backup of your S3 bucket. You can schedule this script to run periodically using cron.
+Save this script to a file ```(e.g., backup.sh)```, make it executable with ```chmod +x backup.sh```, and then you can run it to create a backup of your S3 bucket. You can schedule this script to run periodically using cron.
 
 
 To set up a cron job to run the script daily, for example, you can edit your crontab using the command ```crontab -e``` and add a line like this:
@@ -28,5 +28,5 @@ To set up a cron job to run the script daily, for example, you can edit your cro
 0 0 * * * /path/to/s3_backup.sh
 ```
 
-This will run the script ```/path/to/s3_backup.sh``` every day at midnight. Adjust the timing according to your backup frequency requirements.
+This will run the script ```/path/to/backup.sh``` every day at midnight. Adjust the timing according to your backup frequency requirements.
 

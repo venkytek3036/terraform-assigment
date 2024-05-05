@@ -3,7 +3,7 @@ module "alb" {
 
   name    = "${local.prefix}-alb-${local.env}"
   vpc_id  = module.vpc_apps.vpc_id
-  subnets = [module.vpc_apps.public_subnets[0],module.vpc_apps.public_subnets[1]]
+  subnets = [module.vpc_apps.public_subnets[0], module.vpc_apps.public_subnets[1]]
 
   # Security Group
   security_group_ingress_rules = {
@@ -48,10 +48,10 @@ module "alb" {
 
   target_groups = {
     ex-instance = {
-      name_prefix      = "v1"
-      protocol         = "HTTP"
-      target_type      = "instance"
-      target_id        = aws_instance.test.id
+      name_prefix = "v1"
+      protocol    = "HTTP"
+      target_type = "instance"
+      target_id   = aws_instance.test.id
     }
   }
 

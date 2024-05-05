@@ -8,7 +8,7 @@ module "security_group" {
 
   ingress_rules       = ["ssh-tcp"]
   ingress_cidr_blocks = ["0.0.0.0/0"]
-    ingress_with_source_security_group_id = [
+  ingress_with_source_security_group_id = [
     {
       source_security_group_id = module.alb.security_group_id
       to_port                  = 22
